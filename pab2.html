@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pabbas Menu</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin: 20px;
+      font-family: cursive;
+      font-size: 40px;
+    }
+
+    .menu {
+      margin: 0 auto;
+      max-width: 500px;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function placeOrder() {
+      alert("Order placed successfully! Thank you for ordering at Pabbas.");
+    }
+  </script>
+</head>
+<body>
+  <h1 id="Resume">Pabbas Menu</h1>
+
+  <div class="menu">
+    <div class="menu-item">
+      <span>Chocolate Sundae</span>
+      <span>₹120</span>
+    </div>
+    <div class="menu-item">
+      <span>Strawberry Delight</span>
+      <span>₹110</span>
+    </div>
+    <div class="menu-item">
+      <span>Oreo Milkshake</span>
+      <span>₹150</span>
+    </div>
+    <div class="menu-item">
+      <span>Veg Sandwich</span>
+      <span>₹90</span>
+    </div>
+    <div class="menu-item">
+      <span>French Fries</span>
+      <span>₹80</span>
+    </div>
+
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+</body>
+</html>
